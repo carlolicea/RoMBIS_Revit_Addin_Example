@@ -25,8 +25,12 @@ namespace RevitAddinExample
         public MainWindow(UIApplication uiApp)
         {
             InitializeComponent();
-            /*You can add the functions of your add-in here or within the MainWindow class.*/
 
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            ExCommand._mainWindow = null;
         }
     }
 }
