@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Revit Addin Example</Name>
+    <!--Assembly is the name of the compiled assembnly. 
+    If it is not in the same location as this addin manifest, specify the full path to the dll.-->
+    <Assembly>RevitAddinExample.dll</Assembly>
+    <!--FullClassName is the full path to the class that implements IExternalApplication, including the namespace-->
+    <FullClassName>RevitAddinExample.ExApplication</FullClassName>
+    <!--ClientId must be unique per addin manifest. 
+    Create one from services online such as https://www.guidgenerator.com/-->
+    <ClientId>D474E76D-A305-4457-9180-E730C5E46522</ClientId>
+    <VendorId>RMBS</VendorId>
+    <VendorDescription>RoMBIS</VendorDescription>
+  </AddIn>
+</RevitAddIns>
