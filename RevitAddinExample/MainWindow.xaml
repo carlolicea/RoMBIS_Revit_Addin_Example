@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RevitAddinExample"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed">
-    <Grid>
-        
+        Title="Crop Elevation View" Height="200" MaxHeight="200" MinHeight="200" Width="275" MinWidth="275" FontSize="14" FontFamily="Calibri" ResizeMode="CanResize" Topmost="True"
+        Closed="Window_Closed" Icon="Properties/Resources/RoMBIS_small.png" >
+    <Grid Background="#FF6F64A1">
     </Grid>
 </Window>

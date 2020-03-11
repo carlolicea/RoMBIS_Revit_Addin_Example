@@ -1,5 +1,6 @@
 ﻿using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using Autodesk.Revit.UI.Selection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,15 +23,19 @@ namespace RevitAddinExample
     /// </summary>
     public partial class MainWindow : Window
     {
+        internal static MainWindow _mainWindow;
+        internal static UIApplication _uiApp;
+
         public MainWindow(UIApplication uiApp)
         {
             InitializeComponent();
-
+            _uiApp = uiApp;
+            _mainWindow = this;
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            ExCommand._mainWindow = null;
+            _mainWindow = null;
         }
-    }
+    }    
 }
