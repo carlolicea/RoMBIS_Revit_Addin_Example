@@ -12,7 +12,10 @@ namespace RevitAddinExample
     internal enum RequestId : int
     {
         None = 0,
-        CropViewToElements = 1,
+        //TODO: Add a name per tool's operation that will require a Request being made to the Revit thread, and assign it an integer.
+        /// <example>
+        ///     CropElevationToElements = 1,
+        /// </example>
     }
 
     /// <summary> Creates a request to the thread running Revit so the RequestHandler can slip in an operation. </summary>
