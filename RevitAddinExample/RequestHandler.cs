@@ -47,9 +47,12 @@ namespace RevitAddinExample
                 {
                     case RequestId.None:
                         break;
-                    case RequestId.CropViewToElements:
-                        CropViewToElements.PerformOperations();
-                        break;
+                    //TODO: Put cases here that match the RequestId you assign to your operation's name.
+                    /// <example>
+                    ///     case RequestId.CropElevationToElements:
+                    ///         CropElevationToElements.PerformOperations();
+                    ///         break;
+                    /// </example>
                     default:
                         break;
                 }

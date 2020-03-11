@@ -108,7 +108,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CropViewToElements.cs" />
     <Compile Include="ExApplication.cs" />
     <Compile Include="ExCommand.cs" />
     <Compile Include="Request.cs" />
