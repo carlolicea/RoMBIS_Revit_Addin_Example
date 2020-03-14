@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.29827.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitAddinExample", "RevitAddinExample\RevitAddinExample.csproj", "{FF429471-25E4-47B1-929A-E6955BEC3A62}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B73A4251-A254-4483-8825-4A759E2933F7}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Autodesk.Revit.SDK.2019.2.1\lib\net47\RevitAPI.dll = packages\Autodesk.Revit.SDK.2019.2.1\lib\net47\RevitAPI.dll
+		packages\Autodesk.Revit.SDK.2020.1.0\lib\net471\RevitAPI.dll = packages\Autodesk.Revit.SDK.2020.1.0\lib\net471\RevitAPI.dll
+		packages\Autodesk.Revit.SDK.2019.2.1\lib\net47\RevitAPIUI.dll = packages\Autodesk.Revit.SDK.2019.2.1\lib\net47\RevitAPIUI.dll
+		packages\Autodesk.Revit.SDK.2020.1.0\lib\net471\RevitAPIUI.dll = packages\Autodesk.Revit.SDK.2020.1.0\lib\net471\RevitAPIUI.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Revit 2019|Any CPU = Revit 2019|Any CPU
