@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace RevitAddinExample
 {
+    /// <summary> Implements an IExternalEventHandler for handling events. </summary>
     class RequestHandler : IExternalEventHandler
     {
         /// <summary> A RequestHandler object to be recalled. </summary>
@@ -15,6 +16,7 @@ namespace RevitAddinExample
         internal static ExternalEvent _exEvent;
         /// <summary> A Request object to be recalled. </summary>
         internal Request _request = new Request();
+
 
         internal RequestHandler()
         {
@@ -48,6 +50,7 @@ namespace RevitAddinExample
                     case RequestId.None:
                         break;
                     case RequestId.CropViewToElements:
+                        //Call the method that will interact with the Revit db.
                         CropViewToElements.PerformOperations();
                         break;
                     default:

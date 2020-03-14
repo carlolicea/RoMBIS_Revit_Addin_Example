@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RevitAddinExample"
         mc:Ignorable="d"
-        Title="Crop Elevation View" Height="200" MaxHeight="400" MinHeight="200" Width="275" MinWidth="275" FontSize="14" FontFamily="Calibri" ResizeMode="CanResize" Topmost="True"
+        Title="Crop Plan View" Height="200" MaxHeight="400" MinHeight="200" Width="275" MinWidth="275" FontSize="14" FontFamily="Calibri" ResizeMode="CanResize" Topmost="True"
         Closed="Window_Closed" Icon="Properties/Resources/RoMBIS_small.png" >
     <Window.Resources>
         <Style x:Key="buttonStyle" TargetType="Button">
@@ -28,7 +28,7 @@
                 <Label Content="Select Elements" Foreground="White" HorizontalAlignment="Center"/>
                 <Button x:Name="SelectButton" Style="{StaticResource buttonStyle}" HorizontalAlignment="Center" Click="SelectButton_Click">Select</Button>
             </StackPanel>
-            <Button x:Name="CropButton" Grid.Row="1" Style="{StaticResource buttonStyle}" VerticalAlignment="Bottom" Margin="0,0,0,10" HorizontalAlignment="Center" Background="#FFFF7F7F" Click="CropButton_Click" >Crop!</Button>
+            <Button x:Name="CropButton" Grid.Row="1" Style="{StaticResource buttonStyle}" VerticalAlignment="Bottom" Margin="0,0,0,10" HorizontalAlignment="Center" Click="CropButton_Click" >Crop!</Button>
         </Grid>
     </Grid>
 </Window>

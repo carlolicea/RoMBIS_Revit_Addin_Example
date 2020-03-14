@@ -20,6 +20,7 @@ namespace RevitAddinExample
         /// <summary> Static UIControlledApplication to be used in successive calls. </summary>
         internal static UIControlledApplication _uiCtrlApp;
 
+
         /// <summary> Runs processes when Revit starts. </summary>
         /// <param name="uIControlledApplication"> A UIControlledApplication object. </param>
         /// <remarks> Part of the Revit API to setup processes when Revit starts. </remarks>
@@ -34,6 +35,10 @@ namespace RevitAddinExample
              * ApplicationInitalized is one of the most important since you can add event handlers for: 
              * DocumentOpened, DocumentCreated, DocumentSaved, DocumentClosed, etc.*/
             #endregion Notes
+
+            //Add this RequestHandler and ExternalEvent to be assigned at startup. See the RequestHandler class for definition.
+            RequestHandler._handler = new RequestHandler();
+            RequestHandler._exEvent = ExternalEvent.Create(RequestHandler._handler);
 
             // Create the Ribbon buttons for the add-in on startup.
             this.CreateRibbonButtons();
