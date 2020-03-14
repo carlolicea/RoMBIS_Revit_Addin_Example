@@ -13,9 +13,7 @@ namespace RevitAddinExample
     {
         None = 0,
         //TODO: Add a name per tool's operation that will require a Request being made to the Revit thread, and assign it an integer.
-        /// <example>
-        ///     CropElevationToElements = 1,
-        /// </example>
+        CropViewToElements = 1,
     }
 
     /// <summary> Creates a request to the thread running Revit so the RequestHandler can slip in an operation. </summary>
