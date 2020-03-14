@@ -76,11 +76,11 @@
     <When Condition="$(DefineConstants.Contains('2020'))">
       <ItemGroup>
         <Reference Include="RevitAPI">
-          <HintPath>..\packages\Autodesk.Revit.SDK.2020.1.0\lib\net471\RevitAPI.dll</HintPath>
+          <HintPath>..\packages\Revit.2020.Assemblies.1.0.0\lib\RevitAPI.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="RevitAPIUI">
-          <HintPath>..\packages\Autodesk.Revit.SDK.2020.1.0\lib\net471\RevitAPIUI.dll</HintPath>
+          <HintPath>..\packages\Revit.2020.Assemblies.1.0.0\lib\RevitAPIUI.dll</HintPath>
           <Private>True</Private>
         </Reference>
       </ItemGroup>
@@ -89,7 +89,7 @@
       </PropertyGroup>
     </When>
   </Choose>
-  <ItemGroup>    
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
