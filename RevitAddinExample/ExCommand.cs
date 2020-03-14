@@ -16,7 +16,8 @@ namespace RevitAddinExample
     public class ExCommand : IExternalCommand
     {
         /// <summary> A UIApplication object to store information about the UIAppliction for later use. </summary>
-        internal static UIApplication uIApplication;
+        internal static UIApplication uiApplication;
+
 
         /// <summary> Executes an external command </summary>
         /// <param name="externalCommandData"> ExternalCommandData supplied by Revit. User does not provide this. </param>
@@ -27,7 +28,14 @@ namespace RevitAddinExample
         public Result Execute(ExternalCommandData externalCommandData, ref string message, ElementSet elementSet)
         {
             // From the externalCommandData, get the active UIApplication.
-            uIApplication = externalCommandData.Application;
+            uiApplication = externalCommandData.Application;
+
+            //Do a preliminary check to ensure the user is in a plan view by checking the view type and seeing if it contains "plan";
+            if(!uiApplication.ActiveUIDocument.ActiveView.ViewType.ToString().ToLower().Contains("plan"))
+            {
+                TaskDialog.Show("Notice", "This add-in only works in a plan view");
+                return Result.Cancelled;
+            }
 
             // Try to perform the commands enclosed. 
             try
@@ -40,7 +48,7 @@ namespace RevitAddinExample
                 else
                 {
                     //Otherwise, the _mainWindow has not been displayed/created, so make one and show it.
-                    MainWindow._mainWindow = new MainWindow(uIApplication);
+                    MainWindow._mainWindow = new MainWindow(uiApplication);
                     MainWindow._mainWindow.Show();
                 }
                 return Result.Succeeded;
