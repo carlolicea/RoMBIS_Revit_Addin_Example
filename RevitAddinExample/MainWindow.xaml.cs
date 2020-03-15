@@ -41,6 +41,8 @@ namespace RevitAddinExample
             InitializeComponent();
             // Set the local UIApplication variable for MainWindow
             _uiApp = uiApp;
+            // Set the static _mainWindow object to this new instance
+            _mainWindow = this;
 
             // Check if the list of elements selected has no elements.
             if (_cropElements.Count == 0)
