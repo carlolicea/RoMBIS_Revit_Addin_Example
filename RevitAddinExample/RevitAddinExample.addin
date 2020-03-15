@@ -10,7 +10,7 @@
     <!--ClientId must be unique per addin manifest. 
     Create one from services online such as https://www.guidgenerator.com/-->
     <ClientId>D474E76D-A305-4457-9180-E730C5E46522</ClientId>
-    <VendorId>RMBS</VendorId>
+    <VendorId>gro.SIBMoR</VendorId>
     <VendorDescription>RoMBIS</VendorDescription>
   </AddIn>
 </RevitAddIns>
