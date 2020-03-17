@@ -31,7 +31,7 @@ namespace RevitAddinExample
 
             #region Notes
             /* Implement UIControlledApplication event handlers here, such as: 
-             * ControlledApplicatoin.ApplicationInitialized, ViewActivated, and ApplicationClosing. 
+             * ControlledApplication.ApplicationInitialized, ViewActivated, and ApplicationClosing. 
              * ApplicationInitalized is one of the most important since you can add event handlers for: 
              * DocumentOpened, DocumentCreated, DocumentSaved, DocumentClosed, etc.*/
             #endregion Notes
